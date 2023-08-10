@@ -149,3 +149,18 @@ document.getElementById('ellipse-btn').addEventListener('click', function () {
     </div>`
     areaDiv.appendChild(li);
 });
+// random color add 
+const cardRandoms = document.getElementsByClassName('card-random');
+for (const cardRandom of cardRandoms) {
+    cardRandom.addEventListener('mouseenter', function (event) {
+        event.target.style.backgroundColor = 'rgb(' + Math.round(Math.random() * 255) +
+            ',' + Math.round(Math.random() * 255) +
+            ',' + Math.round(Math.random() * 255) + ')';
+    })
+};
+
+for (const cardRandom of cardRandoms) {
+    cardRandom.addEventListener('mouseleave', function (event) {
+        event.target.style.backgroundColor = 'white';
+    })
+};
