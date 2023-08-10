@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Questions</title>
+    <!-- bootstrap link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="mt-4">Questions</h1>
+        <div class="accordion mt-4" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        1. What is DOM and what is the purpose of DOM?
+
+
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        DOM stands for "Document Object Model." It is a programming interface and representation of a
+                        structured document, typically used for web pages and XML documents. The DOM represents the
+                        structure of the document as a tree of objects, where each object corresponds to a part of the
+                        document, such as elements, attributes, and text content.In the context of web development, the
+                        DOM is often associated with web browsers. When a web page is loaded, the browser creates a DOM
+                        representation of the HTML or XML content of the page. This allows developers to interact with
+                        and manipulate the content of the page using scripting languages like JavaScript. By accessing
+                        and modifying the DOM, developers can dynamically update the content and appearance of a web
+                        page without requiring a full page reload.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        2. How will you select HTML elements using DOM? Name the DOM methods.
+
+
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        1. getElementsByTagName()
+                        2. getElementsByClassName()
+                        3.getElementById()
+                        4.querySelector()
+                        5.querySelectorAll()
+
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        3. What is event bubble?
+
+
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Event Bubbling is a concept in the DOM (Document Object Model). It happens when an element
+                        receives an event, and that event bubbles up (or you can say is transmitted or propagated) to
+                        its parent and ancestor elements in the DOM tree until it gets to the root element.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        4. What is a callback function and why will you use it?
+
+
+
+
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        A JavaScript callback is a function which is to be executed after another function has finished
+                        execution. A more formal definition would be - Any function that is passed as an argument to
+                        another function so that it can be executed in that other function is called as a callback
+                        function.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- bootstrap script link  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

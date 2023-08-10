@@ -1,3 +1,8 @@
+document.getElementById('blog-btn').addEventListener('click', function () {
+    window.open('question.html', '_blank')
+    //location.href = 'question.html', target = '_blank';
+})
+
 let count = 0;
 document.getElementById('triangle-btn').addEventListener('click', function () {
     // Area (A) = 0.5 * b * h
